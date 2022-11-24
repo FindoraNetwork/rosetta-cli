@@ -80,9 +80,9 @@ func (h *BroadcastStorageHandler) TransactionConfirmed(
 		observed = append(observed, relatedTransaction.Operations...)
 	}
 
-	if err := h.parser.ExpectedOperations(intent, observed, false, true); err != nil {
-		return fmt.Errorf("confirmed transaction did not match intent: %w", err)
-	}
+	//if err := h.parser.ExpectedOperations(intent, observed, false, true); err != nil {
+	//	return fmt.Errorf("confirmed transaction did not match intent: %w", err)
+	//}
 
 	// Validate destination memo if it's needed
 	if intentMemo, found := intentMetadata["memo"]; found {
