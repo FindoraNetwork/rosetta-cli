@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,10 +19,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/coinbase/rosetta-sdk-go/asserter"
-	"github.com/coinbase/rosetta-sdk-go/fetcher"
-	"github.com/coinbase/rosetta-sdk-go/utils"
 	"github.com/fatih/color"
+	"github.com/findoranetwork/rosetta-sdk-go/asserter"
+	"github.com/findoranetwork/rosetta-sdk-go/fetcher"
+	"github.com/findoranetwork/rosetta-sdk-go/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -31,7 +31,7 @@ var (
 		Use:   "utils:asserter-configuration",
 		Short: "Generate a static configuration file for the Asserter",
 		Long: `In production deployments, it is useful to initialize the response
-Asserter (https://github.com/coinbase/rosetta-sdk-go/tree/master/asserter) using
+Asserter (https://github.com/findoranetwork/rosetta-sdk-go/tree/master/asserter) using
 a static configuration instead of initializing a configuration dynamically
 from the node. This allows a client to error on new types/statuses that may
 have been added in an update instead of silently erroring.

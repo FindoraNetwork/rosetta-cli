@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,10 +25,10 @@ import (
 	"runtime/pprof"
 	"syscall"
 
-	"github.com/coinbase/rosetta-cli/configuration"
+	"github.com/findoranetwork/rosetta-cli/configuration"
 
-	"github.com/coinbase/rosetta-sdk-go/utils"
 	"github.com/fatih/color"
+	"github.com/findoranetwork/rosetta-sdk-go/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -82,7 +82,7 @@ var (
 	// logged to the console.
 	OnlyChanges bool
 
-	// allSpecs is a boolean indicating whether check:spec should verify only Coinbase
+	// allSpecs is a boolean indicating whether check:spec should verify only Findora
 	// spec requirements, or the minimum requirements as well.
 	checkAllSpecs bool
 
@@ -333,7 +333,7 @@ default values.`,
 		&checkAllSpecs,
 		"all",
 		false,
-		`Verify both minimum and Coinbase spec requirements`,
+		`Verify both minimum and Findora spec requirements`,
 	)
 	rootCmd.AddCommand(checkSpecCmd)
 }

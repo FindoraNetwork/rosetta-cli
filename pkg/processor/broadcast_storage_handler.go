@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,13 +20,13 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/coinbase/rosetta-cli/configuration"
+	"github.com/findoranetwork/rosetta-cli/configuration"
 
-	"github.com/coinbase/rosetta-sdk-go/constructor/coordinator"
-	"github.com/coinbase/rosetta-sdk-go/parser"
-	"github.com/coinbase/rosetta-sdk-go/storage/database"
-	"github.com/coinbase/rosetta-sdk-go/storage/modules"
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-sdk-go/constructor/coordinator"
+	"github.com/findoranetwork/rosetta-sdk-go/parser"
+	"github.com/findoranetwork/rosetta-sdk-go/storage/database"
+	"github.com/findoranetwork/rosetta-sdk-go/storage/modules"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
 )
 
 var _ modules.BroadcastStorageHandler = (*BroadcastStorageHandler)(nil)

@@ -2,7 +2,7 @@
 
 ## Code of Conduct
 
-All interactions with this project follow our [Code of Conduct](https://github.com/coinbase/code-of-conduct). By participating, you are expected to honor this code. Violators can be banned from further participation in this project, or potentially all Coinbase projects.
+All interactions with this project follow our [Code of Conduct](https://github.com/coinbase/code-of-conduct). By participating, you are expected to honor this code. Violators can be banned from further participation in this project, or potentially all Findora projects.
 
 ## How to Contribute
 
@@ -61,28 +61,28 @@ Once you submit your pull request, a reviewer will revise it, and either approve
 
 #### Security Issues
 
-You can send a report through Coinbase's [H1 program][12]. Check out the [Security][14] tab for more information.
+You can send a report through Findora's [H1 program][12]. Check out the [Security][14] tab for more information.
 
 #### Support Requests
 
 All support requests must be made via [our support team][3].
 
-**For security reasons, any communication referencing support tickets for Coinbase products will be ignored.** The request will have its content redacted and will be locked to prevent further discussion.
+**For security reasons, any communication referencing support tickets for Findora products will be ignored.** The request will have its content redacted and will be locked to prevent further discussion.
 
-© 2022 Coinbase
+© 2022 Findora
 
 <!-- Before adding link 15, populate link 4. One you do that, please erase this note. --->
-[1]: https://github.com/coinbase/rosetta-cli/issues
+[1]: https://github.com/findoranetwork/rosetta-cli/issues
 [2]: https://chris.beams.io/posts/git-commit/#seven-rules
 [3]: https://support.coinbase.com/customer/en/portal/articles/2288496-how-can-i-contact-coinbase-support-
 <!--- [4]: link removed --->
-[5]: https://github.com/coinbase/rosetta-cli/issues/new/choose
-[6]: https://github.com/coinbase/rosetta-cli/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-[7]: https://github.com/coinbase/rosetta-cli/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
-[8]: https://github.com/coinbase/rosetta-cli/pulls
-[9]: https://github.com/coinbase/rosetta-cli/compare
+[5]: https://github.com/findoranetwork/rosetta-cli/issues/new/choose
+[6]: https://github.com/findoranetwork/rosetta-cli/issues/new?assignees=&labels=bug&template=bug_report.md&title=
+[7]: https://github.com/findoranetwork/rosetta-cli/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
+[8]: https://github.com/findoranetwork/rosetta-cli/pulls
+[9]: https://github.com/findoranetwork/rosetta-cli/compare
 [10]: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request#creating-an-issue
 [11]: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request#creating-a-pull-request
 [12]: https://hackerone.com/coinbase
 [13]: https://community.rosetta-api.org
-[14]: https://github.com/coinbase/rosetta-cli/security
+[14]: https://github.com/findoranetwork/rosetta-cli/security

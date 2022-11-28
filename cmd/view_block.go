@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@ import (
 	"strconv"
 	"time"
 
-	cliErrs "github.com/coinbase/rosetta-cli/pkg/errors"
+	cliErrs "github.com/findoranetwork/rosetta-cli/pkg/errors"
 
-	"github.com/coinbase/rosetta-sdk-go/fetcher"
-	"github.com/coinbase/rosetta-sdk-go/parser"
-	"github.com/coinbase/rosetta-sdk-go/types"
-	"github.com/coinbase/rosetta-sdk-go/utils"
 	"github.com/fatih/color"
+	"github.com/findoranetwork/rosetta-sdk-go/fetcher"
+	"github.com/findoranetwork/rosetta-sdk-go/parser"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-sdk-go/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -36,7 +36,7 @@ var (
 		Long: `While debugging a Data API implementation, it can be very
 useful to inspect block contents. This command allows you to fetch any
 block by index to inspect its contents. It uses the
-fetcher (https://github.com/coinbase/rosetta-sdk-go/tree/master/fetcher) package
+fetcher (https://github.com/findoranetwork/rosetta-sdk-go/tree/master/fetcher) package
 to automatically get all transactions in the block and assert the format
 of the block is correct before printing.
 

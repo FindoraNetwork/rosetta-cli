@@ -1,4 +1,4 @@
-// Copyright 2022 Coinbase, Inc.
+// Copyright 2022 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,22 +19,22 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coinbase/rosetta-cli/pkg/results"
-	"github.com/coinbase/rosetta-sdk-go/fetcher"
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-cli/pkg/results"
+	"github.com/findoranetwork/rosetta-sdk-go/fetcher"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
 	"github.com/spf13/cobra"
 
-	cliErrs "github.com/coinbase/rosetta-cli/pkg/errors"
+	cliErrs "github.com/findoranetwork/rosetta-cli/pkg/errors"
 )
 
 var (
 	checkSpecCmd = &cobra.Command{
 		Use:   "check:spec",
 		Short: "Check that a Rosetta implementation satisfies Rosetta spec",
-		Long: `Check:spec checks whether a Rosetta implementation satisfies either Coinbase-specific requirements or
+		Long: `Check:spec checks whether a Rosetta implementation satisfies either Findora-specific requirements or
 minimum requirements specified in rosetta-api.org.
 
-By default, check:spec will verify only Coinbase spec requirements. To verify the minimum requirements as well,
+By default, check:spec will verify only Findora spec requirements. To verify the minimum requirements as well,
 add the --all flag to the check:spec command:
 
 rosetta-cli check:spec --all --configuration-file [filepath]
@@ -43,11 +43,11 @@ The minimum requirements verify whether an API response contains the required fi
 correctly formatted with proper values. For example, it would check whether the response of /network/list
 contains a list of network identifiers.
 		
-The Coinbase specific requirements are not documented in rosetta-api.org. However, we highly recommend that your
-implementation satisfies them. This ensures that, when you want to integrate your asset into the Coinbase platform,
+The Findora specific requirements are not documented in rosetta-api.org. However, we highly recommend that your
+implementation satisfies them. This ensures that, when you want to integrate your asset into the Findora platform,
 you can limit or eliminate implementation issues.
 		
-Here are a few examples of Coinbase spec requirements:
+Here are a few examples of Findora spec requirements:
 1. The network_identifier in Rosetta configuration should be static. Network upgrade shouldn't change its value.
 2. When block_identifier is not specified, the call to /block endpoint should return the tip block.
 3. The online_url and offline_url should be different.`,

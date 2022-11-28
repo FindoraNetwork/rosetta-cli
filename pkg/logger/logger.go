@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,14 +24,14 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/coinbase/rosetta-cli/pkg/results"
+	"github.com/findoranetwork/rosetta-cli/pkg/results"
 
-	"github.com/coinbase/rosetta-sdk-go/parser"
-	"github.com/coinbase/rosetta-sdk-go/reconciler"
-	"github.com/coinbase/rosetta-sdk-go/statefulsyncer"
-	"github.com/coinbase/rosetta-sdk-go/types"
-	"github.com/coinbase/rosetta-sdk-go/utils"
 	"github.com/fatih/color"
+	"github.com/findoranetwork/rosetta-sdk-go/parser"
+	"github.com/findoranetwork/rosetta-sdk-go/reconciler"
+	"github.com/findoranetwork/rosetta-sdk-go/statefulsyncer"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-sdk-go/utils"
 )
 
 var _ statefulsyncer.Logger = (*Logger)(nil)

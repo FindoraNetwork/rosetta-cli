@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
 
 package cmd
 
-import "github.com/coinbase/rosetta-sdk-go/types"
+import "github.com/findoranetwork/rosetta-sdk-go/types"
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/coinbase/rosetta-sdk-go/asserter"
+	"github.com/findoranetwork/rosetta-sdk-go/asserter"
 )
 
 var (
@@ -50,18 +50,18 @@ var (
 
 	allowedErrors = []*types.Error{
 		{
-			Code: 4,
-			Message: "Block not found",
+			Code:      4,
+			Message:   "Block not found",
 			Retriable: false,
 		},
 		{
-			Code: 0,
-			Message: "Endpoint not implemented",
+			Code:      0,
+			Message:   "Endpoint not implemented",
 			Retriable: false,
 		},
 		{
-			Code: 3,
-			Message: "Bitcoind error",
+			Code:      3,
+			Message:   "Bitcoind error",
 			Retriable: false,
 		},
 	}
@@ -93,18 +93,18 @@ func TestSortArrayFields(t *testing.T) {
 	}, clientConfiguration.AllowedOperationStatuses)
 	assert.Equal([]*types.Error{
 		{
-			Code: 0,
-			Message: "Endpoint not implemented",
+			Code:      0,
+			Message:   "Endpoint not implemented",
 			Retriable: false,
 		},
 		{
-			Code: 3,
-			Message: "Bitcoind error",
+			Code:      3,
+			Message:   "Bitcoind error",
 			Retriable: false,
 		},
 		{
-			Code: 4,
-			Message: "Block not found",
+			Code:      4,
+			Message:   "Block not found",
 			Retriable: false,
 		},
 	}, clientConfiguration.AllowedErrors)

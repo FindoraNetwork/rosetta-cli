@@ -1,10 +1,10 @@
-module github.com/coinbase/rosetta-cli
+module github.com/findoranetwork/rosetta-cli
 
 go 1.16
 
 require (
-	github.com/coinbase/rosetta-sdk-go v0.8.1
 	github.com/fatih/color v1.13.0
+	github.com/findoranetwork/rosetta-sdk-go v0.8.5
 	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/olekukonko/tablewriter v0.0.5

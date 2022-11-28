@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 package configuration
 
 import (
-	"github.com/coinbase/rosetta-sdk-go/constructor/job"
-	"github.com/coinbase/rosetta-sdk-go/storage/modules"
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-sdk-go/constructor/job"
+	"github.com/findoranetwork/rosetta-sdk-go/storage/modules"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
 )
 
 // CheckDataEndCondition is a type of "successful" end
@@ -137,7 +137,7 @@ type ConstructionConfiguration struct {
 	// of a Rosetta Constructor DSL file (*.ros)
 	// that describes which Workflows to test.
 	//
-	// DSL Spec: https://github.com/coinbase/rosetta-sdk-go/tree/master/constructor/dsl
+	// DSL Spec: https://github.com/findoranetwork/rosetta-sdk-go/tree/master/constructor/dsl
 	ConstructorDSLFile string `json:"constructor_dsl_file"`
 
 	// EndConditions is a map of workflow:count that

@@ -10,10 +10,10 @@
 CLI to validate the correctness of Rosetta API implementations
 </p>
 <p align="center">
-  <a href="https://circleci.com/gh/coinbase/rosetta-cli/tree/master"><img src="https://circleci.com/gh/coinbase/rosetta-cli/tree/master.svg?style=shield" /></a>
-  <a href="https://coveralls.io/github/coinbase/rosetta-cli"><img src="https://coveralls.io/repos/github/coinbase/rosetta-cli/badge.svg" /></a>
-  <a href="https://goreportcard.com/report/github.com/coinbase/rosetta-cli"><img src="https://goreportcard.com/badge/github.com/coinbase/rosetta-cli" /></a>
-  <a href="https://github.com/coinbase/rosetta-cli/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/coinbase/rosetta-cli.svg" /></a>
+  <a href="https://circleci.com/gh/findoranetwork/rosetta-cli/tree/master"><img src="https://circleci.com/gh/findoranetwork/rosetta-cli/tree/master.svg?style=shield" /></a>
+  <a href="https://coveralls.io/github/findoranetwork/rosetta-cli"><img src="https://coveralls.io/repos/github/findoranetwork/rosetta-cli/badge.svg" /></a>
+  <a href="https://goreportcard.com/report/github.com/findoranetwork/rosetta-cli"><img src="https://goreportcard.com/badge/github.com/findoranetwork/rosetta-cli" /></a>
+  <a href="https://github.com/findoranetwork/rosetta-cli/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/findoranetwork/rosetta-cli.svg" /></a>
 </p>
 
 The `rosetta-cli` tool is used by developers to test the correctness of their Rosetta API implementations. The CLI also provides the ability to look up block contents and account balances.
@@ -22,7 +22,7 @@ The `rosetta-cli` tool is used by developers to test the correctness of their Ro
 
 To download a binary for the latest release, run:
 ```
-curl -sSfL https://raw.githubusercontent.com/coinbase/rosetta-cli/master/scripts/install.sh | sh -s
+curl -sSfL https://raw.githubusercontent.com/findoranetwork/rosetta-cli/master/scripts/install.sh | sh -s
 ```
 
 The binary will be installed inside the `./bin` directory (relative to the directory where you ran the installation command).
@@ -32,7 +32,7 @@ _Downloading binaries from the Github UI will cause permission errors on Mac._
 ### Installing in a Custom Location
 To download the binary into a specific directory, run:
 ```
-curl -sSfL https://raw.githubusercontent.com/coinbase/rosetta-cli/master/scripts/install.sh | sh -s -- -b <relative directory>
+curl -sSfL https://raw.githubusercontent.com/findoranetwork/rosetta-cli/master/scripts/install.sh | sh -s -- -b <relative directory>
 ```
 
 ### Run via Docker
@@ -50,7 +50,7 @@ docker run -v "$(pwd):/data" -it [image-name] check:data --configuration-file /d
 
 We recommend that you continually update your installation to the latest release as soon as possible. The latest release notes are available in our [Community](https://community.rosetta-api.org) board under the [Release](https://community.rosetta-api.org/c/releases/13) category.
 
-You can also view releases and change log information in the [Releases](https://github.com/coinbase/rosetta-cli/releases) section of this repository.
+You can also view releases and change log information in the [Releases](https://github.com/findoranetwork/rosetta-cli/releases) section of this repository.
 
 ## Documentation
 
@@ -91,11 +91,11 @@ While working on improvements to this repository, we recommend that you use thes
 
 If you are developing on both the `rosetta-cli` and `rosetta-sdk-go` repositories, use [go.mod replace](https://golang.org/ref/mod#go-mod-file-replace) to reference local changes:
 ```
-replace "github.com/coinbase/rosetta-sdk-go" v0.6.8 => "<PATH TO LOCAL rosetta-sdk-go>"
+replace "github.com/findoranetwork/rosetta-sdk-go" v0.6.8 => "<PATH TO LOCAL rosetta-sdk-go>"
 ```
 ### Release
-* When we release a new rosetta-cli version, please update the version number to follow [PR](https://github.com/coinbase/rosetta-cli/pull/334) so that `rosetta-cli version` command can print the correct value.
-* Create binaries and upload all the binaries in the new release tag (e.g. https://github.com/coinbase/rosetta-cli/releases/tag/v0.7.7)
+* When we release a new rosetta-cli version, please update the version number to follow [PR](https://github.com/findoranetwork/rosetta-cli/pull/334) so that `rosetta-cli version` command can print the correct value.
+* Create binaries and upload all the binaries in the new release tag (e.g. https://github.com/findoranetwork/rosetta-cli/releases/tag/v0.7.7)
     * Ensure `$GOPATH/bin` is added to `$PATH`
     * Run `make compile version=<New Version>`
     * All the binaries will be created in the `bin` folder and should have extension as `tar.gz` and new version number
@@ -125,8 +125,8 @@ _Note: MacOS users, if you face  `ulimit: setrlimit failed: invalid argument` er
 
 ## Related Projects
 
-* [`rosetta-sdk-go`](https://github.com/coinbase/rosetta-sdk-go) — The `rosetta-sdk-go` SDK provides a collection of packages used for interaction with the Rosetta API specification. Much of the SDK code is generated from this, the [`rosetta-specifications`](https://github.com/coinbase/rosetta-specifications) repository.
-* [`rosetta-specifications`](https://github.com/coinbase/rosetta-specifications) — The `rosetta-specifications` repository generates the SDK code in the [`rosetta-sdk-go`](https://github.com/coinbase/rosetta-sdk-go) repository.
+* [`rosetta-sdk-go`](https://github.com/findoranetwork/rosetta-sdk-go) — The `rosetta-sdk-go` SDK provides a collection of packages used for interaction with the Rosetta API specification. Much of the SDK code is generated from this, the [`rosetta-specifications`](https://github.com/coinbase/rosetta-specifications) repository.
+* [`rosetta-specifications`](https://github.com/coinbase/rosetta-specifications) — The `rosetta-specifications` repository generates the SDK code in the [`rosetta-sdk-go`](https://github.com/findoranetwork/rosetta-sdk-go) repository.
 
 ### Reference Implementations
 
@@ -137,4 +137,4 @@ You can also find community implementations for a variety of blockchains in the 
 
 ## License
 This project is available open source under the terms of the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
-© 2022 Coinbase
+© 2022 Findora

@@ -1,4 +1,4 @@
-// Copyright 2022 Coinbase, Inc.
+// Copyright 2022 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coinbase/rosetta-cli/pkg/results"
-	t "github.com/coinbase/rosetta-cli/pkg/tester"
+	"github.com/findoranetwork/rosetta-cli/pkg/results"
+	t "github.com/findoranetwork/rosetta-cli/pkg/tester"
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 )

@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,12 +23,12 @@ import (
 
 	pkgError "github.com/pkg/errors"
 
-	"github.com/coinbase/rosetta-cli/configuration"
+	"github.com/findoranetwork/rosetta-cli/configuration"
 
-	"github.com/coinbase/rosetta-sdk-go/storage/modules"
-	"github.com/coinbase/rosetta-sdk-go/types"
-	"github.com/coinbase/rosetta-sdk-go/utils"
 	"github.com/fatih/color"
+	"github.com/findoranetwork/rosetta-sdk-go/storage/modules"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-sdk-go/utils"
 	"github.com/olekukonko/tablewriter"
 )
 

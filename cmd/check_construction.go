@@ -1,4 +1,4 @@
-// Copyright 2020 Coinbase, Inc.
+// Copyright 2020 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,14 +19,14 @@ import (
 	"fmt"
 	"time"
 
-	cliErrs "github.com/coinbase/rosetta-cli/pkg/errors"
+	cliErrs "github.com/findoranetwork/rosetta-cli/pkg/errors"
 
-	"github.com/coinbase/rosetta-cli/pkg/results"
-	"github.com/coinbase/rosetta-cli/pkg/tester"
+	"github.com/findoranetwork/rosetta-cli/pkg/results"
+	"github.com/findoranetwork/rosetta-cli/pkg/tester"
 
-	"github.com/coinbase/rosetta-sdk-go/fetcher"
-	"github.com/coinbase/rosetta-sdk-go/types"
-	"github.com/coinbase/rosetta-sdk-go/utils"
+	"github.com/findoranetwork/rosetta-sdk-go/fetcher"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-sdk-go/utils"
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 )
@@ -44,7 +44,7 @@ are run to ensure that intermediate representations are correct (for example, do
 an unsigned transaction return a superset of operations provided during
 construction?).
 
-Check out the https://github.com/coinbase/rosetta-cli/tree/master/examples
+Check out the https://github.com/findoranetwork/rosetta-cli/tree/master/examples
 directory for examples of how to configure this test for Bitcoin and
 Ethereum.
 

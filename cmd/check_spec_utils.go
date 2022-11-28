@@ -1,4 +1,4 @@
-// Copyright 2022 Coinbase, Inc.
+// Copyright 2022 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/coinbase/rosetta-sdk-go/fetcher"
 	"github.com/fatih/color"
+	"github.com/findoranetwork/rosetta-sdk-go/fetcher"
 
-	cliErrs "github.com/coinbase/rosetta-cli/pkg/errors"
+	cliErrs "github.com/findoranetwork/rosetta-cli/pkg/errors"
 )
 
 type checkSpecAPI string
@@ -137,7 +137,7 @@ func printValidationResult(format string, css checkSpecStatus, a ...interface{})
 
 func printCheckSpecOutputHeader() {
 	printInfo("%v\n", "+--------------------------+-------------------------------------------------------------------+-----------+-----------------+")
-	printInfo("%v\n", "|           API            |                              Requirement                          |   Status  |  Coinbase Spec  |")
+	printInfo("%v\n", "|           API            |                              Requirement                          |   Status  |  Findora Spec  |")
 	printInfo("%v\n", "+--------------------------+-------------------------------------------------------------------+-----------+-----------------+")
 }
 

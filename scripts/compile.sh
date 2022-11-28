@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright 2020 Coinbase, Inc.
+# Copyright 2020 Findora, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,8 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-VERSION=$1;
+VERSION=$1
 
 go install github.com/crazy-max/xgo@latest
 
@@ -23,7 +22,7 @@ LINUX_TARGETS="linux/amd64,linux/arm64,linux/mips64,linux/mips64le,linux/ppc64le
 WINDOWS_TARGET="windows/amd64"
 TARGETS="${MAC_TARGETS},${LINUX_TARGETS},${WINDOWS_TARGET}"
 
-xgo -go 1.16.3 --targets=${TARGETS} -out "bin/rosetta-cli-${VERSION}" .;
+xgo -go 1.16.3 --targets=${TARGETS} -out "bin/rosetta-cli-${VERSION}" .
 
 # Rename some files
 mv "bin/rosetta-cli-${VERSION}-darwin-10.16-amd64" "bin/rosetta-cli-${VERSION}-darwin-amd64"
@@ -31,7 +30,7 @@ mv "bin/rosetta-cli-${VERSION}-darwin-10.16-arm64" "bin/rosetta-cli-${VERSION}-d
 mv "bin/rosetta-cli-${VERSION}-windows-4.0-amd64.exe" "bin/rosetta-cli-${VERSION}-windows-amd64"
 
 # Tar all files
-cd bin || exit;
+cd bin || exit
 for i in *; do tar -czf "$i.tar.gz" "$i" && rm "$i"; done
 
 go mod tidy

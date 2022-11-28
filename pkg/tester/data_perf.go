@@ -1,4 +1,4 @@
-// Copyright 2022 Coinbase, Inc.
+// Copyright 2022 Findora, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,11 +18,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/coinbase/rosetta-cli/configuration"
-	cliErrs "github.com/coinbase/rosetta-cli/pkg/errors"
-	"github.com/coinbase/rosetta-cli/pkg/results"
-	"github.com/coinbase/rosetta-sdk-go/fetcher"
-	"github.com/coinbase/rosetta-sdk-go/types"
+	"github.com/findoranetwork/rosetta-cli/configuration"
+	cliErrs "github.com/findoranetwork/rosetta-cli/pkg/errors"
+	"github.com/findoranetwork/rosetta-cli/pkg/results"
+	"github.com/findoranetwork/rosetta-sdk-go/fetcher"
+	"github.com/findoranetwork/rosetta-sdk-go/types"
 )
 
 func SetupBenchmarking(config *configuration.Configuration) (*fetcher.Fetcher, func() time.Duration, chan time.Duration) {
